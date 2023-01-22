@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@100;400;500;600&family=Roboto:wght@500&display=swap');
+
+:root{
+    --white:#fff;
+    ---black: #1c2b2d;
+    --blue:#6924c4;
+    --light-blue:#005490;
+    --color-primary:#9d0191;
+    --color-sec:#db6400;
+    --color-gray:#eee;
+    --color-dark-gray:#c2c5c9;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-family: "poppins", "Open  Sans", sans-serif;
+    background-color: var(--light-blue);
+    outline: none;
+}
+p{
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+img{
+    width: 100%;
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+.calculator{
+    background-color: var(--white);
+    border-radius: 5px;
+    
+}
+h2{
+    color: var(--white);
+    background-color: var(--color-sec);
+    margin-top: 0;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 0.7rem 6rem;
+    letter-spacing: 1px;
+    overflow: hidden;
+    border-radius:  5px 5px 0 0 ;
+    margin-bottom: 20px;
+}
+input{
+    outline: none;
+    padding: 0.5rem ;
+    font-size: 1.5rem;
+    text-align: right;
+    font-weight: 600;
+}
+select option{
+    outline: none;
+    border: none;
+}
+select:active{
+    outline: none;
+}
+.calculator div{
+    display: flex;
+    justify-content: space-between;
+    margin:  0 20px 15px;
+    border-bottom: 2px solid var(--blue);
+    padding: 1rem;
+}
+.calculator .result{
+    display: block;
+    justify-content: flex-start;
+    border-bottom: none;
+}
+label{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+ .calculator form .btn{
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+width:80%;
+margin: auto;
+padding: 0.5rem 0;
+font-size: 1.8rem;
+color: var(--white);
+background-color: var(--blue);
+border-radius: 5px;
+border: none;
+outline: none;
+cursor: pointer;
+transition: all 0.3s ease;
+border-bottom: 2px solid var(--blue);
+}
+.calculator form  .btn:hover{
+background-color: var(--color-sec);
+}
+.tip, .total{
+    background-color: var(--color-dark-gray);
+    padding: 0.5rem 0.5rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.total{
+    color:red;
+}
+.error{
+    text-align: center;
+    color: red;
+    margin: 5px 0 ;
+    display: none;
+    
+}
+@media (max-width:600px) {
+    input{
+        font-size: 1.4rem;
+    }
+}
+@media (max-width:400px) {
+    h2{
+        font-size: 2rem;
+    }
+     input{
+        width: 150px;
+     }
+     label{
+        font-size: 1.2rem;
+
+     }
+     option{
+        font-size: 1rem;
+     }
+}
+

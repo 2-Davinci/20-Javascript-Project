@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@100;400;500;600&family=Roboto:wght@500&display=swap');
+
+:root{
+    --white:#fff;
+    ---black: #1c2b2d;
+    --blue:#31326f;
+    --light-blue:#005490;
+    --color-primary:#9d0191;
+    --color-sec:#db6400;
+    --color-gray:#eee;
+    --color-dark-gray:#222831;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+} 
+body{
+    font-family: "poppins", "Open  Sans", sans-serif;
+    background-color: var(--light-blue);
+    color: var(--white);
+
+
+}
+p{
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+button{
+    cursor: pointer;
+    color: var(--white);
+   border-color: var(--white);
+    padding: 1rem;
+    border-radius: 3px ;
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+    background-color: #005490;
+    transition: all 0.3s ;
+}
+button:hover{
+    background-color: var(--color-sec);
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 300;
+}
+h1 span{
+    font-weight: 500;
+    font-size: 3.4rem;
+}
+p{
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+  
+}
+.pop-up{
+    position: absolute;
+    display: flex;
+    transition: all 0.5s ease;
+    justify-content: center;
+    margin-top: 2rem;
+    flex-direction: column;
+    width: 550px;
+    background-color: var(--color-gray);
+    color: var(--color-dark-gray);
+    padding: 2rem;
+    border-radius: 5px;
+     box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+     transform: translateY(-500px);
+     z-index: 9999;
+}
+.active{
+    transform: translateY(-200px );
+
+    
+}
+
+.disable{
+  display: none;
+}
+.pop-up h2{
+  display: flex;
+  justify-content: center;
+    font-size: 2rem;
+}
+#times{
+    position: absolute;
+    top: 1rem;
+    font-size: 2rem;
+    right: 10px;
+    cursor: pointer;
+}

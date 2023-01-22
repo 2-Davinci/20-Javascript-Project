@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@100;400;500;600&family=Roboto:wght@500&display=swap');
+
+:root{
+    --white:#fff;
+    ---black: #1c2b2d;
+    --blue:#31326f;
+    --light-blue:#97d4ff;
+    --color-primary:#9d0191;
+    --color-sec:#db6400;
+    --color-gray:#eee;
+    --color-dark-gray:#222831;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-family: "poppins", "Open  Sans", sans-serif;
+    background-color: var(--color-gray);
+}
+p{
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+img{
+    width: 100%;
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.weight{
+    margin: 2rem 0 ;
+}
+.weight h2{
+    font-size: 3.5rem;
+    background-color: var(---black);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+}
+input{
+    width: 400px;
+    padding: 0.8rem;
+    outline: none;
+    border: none;
+}
+.weight form{
+    display: flex;
+    justify-content: flex-start;
+   
+    
+    position: relative;
+    flex-direction: column;
+    padding: 2rem;
+    
+}
+.weight form  label{
+ 
+  
+    font-size: 1.5rem;
+      margin: 10px  ;
+
+}
+.weight form p{
+    background-color: var(--light-blue);
+    padding: 1rem;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+@media (max-width:675px) {
+    .container{
+        display: flex;
+        justify-content: flex-start;
+        margin: 0;
+    }
+    .weight{
+        
+        justify-content: flex-start;
+       
+    }
+    .weight h2{
+        font-size: 1.3rem;
+        width: 100%;
+     margin: 0 0px;
+     justify-content: center;
+     text-align: center;
+    }
+    form{
+        margin: 0 -30px;
+    }
+    form p{
+        font-size: 12px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    input{
+        width: 100%;
+    }
+}

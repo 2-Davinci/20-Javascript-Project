@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@100;400;500;600&family=Roboto:wght@500&display=swap');
+
+:root{
+    --white:#fff;
+    ---black: #1c2b2d;
+    --blue:#31326f;
+    --light-blue:#005490;
+    --color-primary:#9d0191;
+    --color-sec:#db6400;
+    --color-gray:#eee;
+    --color-dark-gray:#222831;
+    --blue2:#149afa;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-family: "poppins", "Open  Sans", sans-serif;
+    background-color: var(--light-blue);
+    color: var(---black);
+}
+p{
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+img{
+    width: 100%;
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+   height: 100vh;
+}
+.converter{
+    background-color: white;
+    box-shadow: 0 4px 8px var(--color-dark-gray);
+    border-radius: 10px;
+    overflow: hidden;
+}
+h2{
+    font-size: 2rem;
+    text-align: center;
+    background-color: var(--color-sec);
+    color: var(--white);
+    padding: 2.4rem;
+    letter-spacing: 1px;
+}
+form, form div{
+    display: flex;
+    padding: 2rem;
+    justify-content: space-around;
+    
+    flex-direction: column;
+}
+form p{
+    background-color:var(--blue2);
+    color: var(--white);
+    padding: 0.6rem;
+    margin: 0px;
+    border-radius: 5px;
+    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+form p:hover{
+    background-color: #005490;
+}
+label{
+    font-size: 1.4rem;
+}
+form div {
+    background-color: var(--light-blue);
+    color: var(--white);
+    margin:  10px 0;
+}
+::placeholder{
+    text-align: right;
+}
+input{
+    padding: 0.8rem 1rem;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    margin: 3px;
+}
